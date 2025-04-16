@@ -1,0 +1,31 @@
+Cola JSX
+
+##Componetes agem como funcoes de Java que sao chamadas para rodar codigo html (sempre com a primeira letra maiscula)
+import { useState } from "react";
+
+function App() {
+    ## Se cria um estado com um cosnt [valor original, variavel para valor novo] = useState(Valor novo);
+  const [msg, setMsg] = useState(`Hiii`);
+  return (
+    ## sempre retornar so um componente html pai
+    <div>
+        ##para trazer valores de variaveis javaScript coloque seu indicador entre {}
+      <h1>{msg}</h1>
+      ## on click e um evento que e chamado ao clicar no elemento 
+      <button
+        onClick={() => {
+          setMsg("Byeee");
+        }}
+      >
+        Click
+      </button>
+    </div>
+  );
+}
+
+export default App;
+npm create vite@latest
+
+npm install tailwindcss @tailwindcss/vite
+
+npm install lucide-react
