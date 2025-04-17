@@ -4,7 +4,7 @@
 import { ChevronRight, Trash, Check, X } from "lucide-react";
 import TaskDesc from "../pages/TaskDesc";
 import { useNavigate } from "react-router-dom";
-import Buttont from "./ButtonT.jsx";
+import Buttont from "./Buttont.jsx";
 {
   /* Ao passar valores pela funcao do componente, se for usado {} e as variaveis que serao usadas nao e nescessario usar props */
 }
